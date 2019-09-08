@@ -1,0 +1,9 @@
+@import 'normalize.scss';
+@import './config/fonts.scss';
+@import './config/variables.scss';
+@import './config/mixins.scss';
+@import './config/interface.scss';
+
+@import './blocks/grid';
+@import './blocks/navbar';
+@import './blocks/hero';
