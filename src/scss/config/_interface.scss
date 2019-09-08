@@ -8,6 +8,10 @@ body {
   color: $text-color;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section {
   padding: 100px 0;
 
@@ -68,6 +72,20 @@ button:focus {
   font-weight: 600;
   color: #fff;
   background-color: $primary;
+
+  &-fitting {
+    color: $primary;
+    background-color: #fff;
+  }
+
+  &-add {
+    color: #fff;
+    background-color: lighten($primary, 10%);
+  }
+
+  &-like {
+    background-color: $primary;
+  }
 }
 
 .bg-secondary {
