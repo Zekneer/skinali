@@ -1,0 +1,16 @@
+mixin step(imgPath, title, text)
+  .step
+    img.step__image(src=imgPath, alt=title)
+    h4.step__title= title
+    p.step__text= text
+
+section.section.steps
+  .container
+    h2.section-title.section__title Этапы работ
+    .steps-block
+      +step("./img/step-1.png", "Заявка", "Вы оставляете заявку на нашем сайте или по телефону")
+      +step("./img/step-2.png", "Замер", "Вы произвилите замер сами или наш специалист выезжает к вам")
+      +step("./img/step-3.png", "Договор", "Вы оставляете заявку на нашем сайте или по телефону")
+      +step("./img/step-4.png", "Дизайн", "Вы оставляете заявку на нашем сайте или по телефону")
+      +step("./img/step-5.png", "Производство", "Вы оставляете заявку на нашем сайте или по телефону")
+      +step("./img/step-6.png", "Монтаж", "Вы оставляете заявку на нашем сайте или по телефону ")
