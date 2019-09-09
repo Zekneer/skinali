@@ -1,0 +1,23 @@
+mixin price-card(imgPath, title)
+  .price-card.price-block__card
+    .price-card__image
+      img(src=imgPath, alt=title)
+    .price-card__text
+      .price-card__pricetag
+        h4.price-card__title= title
+        span.price-card__cost от 3500 р/м2
+      .price-card__button
+        button.button Оставить заявку
+
+section.section.price
+  .container
+    h2.section-title.section__title Цены и виды скинали 
+    .price-block
+      +price-card("./img/price-1.jpg", "Прозрачные")
+      +price-card("./img/price-2.jpg", "Однотонные")
+      +price-card("./img/price-3.jpg", "Полноцветные")
+      +price-card("./img/price-4.jpg", "Стекло ‘Optiwite’")
+      +price-card("./img/price-5.jpg", "Зеркальные")
+      +price-card("./img/price-6.jpg", "С подсветкой")
+      +price-card("./img/price-7.jpg", "Световые панели")
+      +price-card("./img/price-8.jpg", "Панно, картины")

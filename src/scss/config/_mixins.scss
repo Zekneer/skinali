@@ -5,3 +5,9 @@
 @mixin light {
   font-family: 'Proxima Nova Light', sans-serif;
 }
+
+@mixin medium {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
